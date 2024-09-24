@@ -1,0 +1,10 @@
+- name: variables for arguments
+  hosts: localhost
+  vars:
+    WISHES: "Morning from PLAY variable"
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: get from args
+    ansible.builtin.debug:
+      msg: "Hello, Good{{ WISHES }}"
