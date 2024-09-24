@@ -1,4 +1,4 @@
-- name: variables preference
+- name: variable preference
   hosts: localhost
   # vars:
   #   WISHES: "Morning from PLAY variable"
@@ -15,7 +15,7 @@
     ansible.builtin.debug:
       msg: "Hello, Good {{ WISHES }}"
 
-  # 1.arguments
+  # 1.Arguments
   # 2.Task level
   # 3.Variable files
   # 4.Prompt 
